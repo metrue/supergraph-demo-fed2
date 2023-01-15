@@ -1,0 +1,9 @@
+type Hotel {
+    id: ID!
+    name: String
+}
+
+type Query {
+    allHotels: [Hotel]
+    fetchHotels(ids: [ID]): [Hotel]
+}
